@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="0Default">
+      <UniqueIdentifier>{9116375c-6e50-4aad-9124-07f9805459ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0Default\DXUT">
+      <UniqueIdentifier>{a43c5c25-0e86-4a20-b64a-883785ff74fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="0Default\Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="0Default\Shaders">
+      <UniqueIdentifier>{2c3d4c8c-5d1a-459a-a05a-a4e4b608a44e}</UniqueIdentifier>
+      <Extensions>fx;fxh;hlsl</Extensions>
+    </Filter>
+    <Filter Include="1Engine">
+      <UniqueIdentifier>{9a95d44b-8b41-4e2d-a057-995e5e5737ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client">
+      <UniqueIdentifier>{cacb828c-3402-4bb7-80d0-9f25c29e5756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\0Base">
+      <UniqueIdentifier>{e4f9306f-1869-4398-bde3-e73ac96256c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\1Scene">
+      <UniqueIdentifier>{8dc92a99-b5d7-4cfe-b9ff-acc6b03885bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\3GameObject">
+      <UniqueIdentifier>{4f8e6eeb-7616-487b-9543-457e439b4721}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component">
+      <UniqueIdentifier>{39121bee-1afb-4704-a2b7-0011d3e11a95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\5Singleton">
+      <UniqueIdentifier>{e969c2bd-5b5a-4c6c-a43e-561629658a1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\6Manager">
+      <UniqueIdentifier>{7e8d584d-d19d-4ab9-a843-d1467c5cce60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\6Manager\0SceneManager">
+      <UniqueIdentifier>{7756cbc9-d650-420d-a821-963b864b927b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\0Component">
+      <UniqueIdentifier>{6256d733-ee4b-4121-9c27-f53d3646a7c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\1Transform">
+      <UniqueIdentifier>{bbb02127-7900-4fdc-870d-dc8bbc469c28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\2Resources">
+      <UniqueIdentifier>{8fd43d67-2d27-47c2-8493-fab0ea27157d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\6Manager\1ResourceManager">
+      <UniqueIdentifier>{28f4bb31-aeed-440e-99ea-f868ddbb0d45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\3Mesh">
+      <UniqueIdentifier>{a9f246e2-a2c7-43bc-ae3a-f6ab8308db5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\3Mesh\0StaticMesh">
+      <UniqueIdentifier>{6c1ce063-a9fc-496b-b925-190953209633}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\0Scene">
+      <UniqueIdentifier>{ba70e8a2-aa97-4256-a4a6-599298153515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject">
+      <UniqueIdentifier>{165832a2-3757-465b-adcb-f47c6270322e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\2Layer">
+      <UniqueIdentifier>{fb698d80-d412-4b15-9a37-c06ea4fd058d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\0Camera">
+      <UniqueIdentifier>{57d85de6-1bd0-4ebd-a419-58ba7460bbc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\6Manager\2GraphicsManager">
+      <UniqueIdentifier>{8235ae9f-aed8-4c86-a49d-01e14b843787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\4Shader">
+      <UniqueIdentifier>{0bdee1bc-45bb-49a6-b107-5607a8c89d7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\3Mesh\1DynamicMesh">
+      <UniqueIdentifier>{341c3da8-fdcc-46db-97db-6cd042104687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\3Mesh\1DynamicMesh\AnimationController">
+      <UniqueIdentifier>{9dc07e0b-1295-4f0f-bf24-134f87092a4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\3Mesh\1DynamicMesh\MeshHierarchy">
+      <UniqueIdentifier>{d4e73a15-67fd-422a-8d22-3f1cf7d327f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\4Shader\1DynamicMeshShader">
+      <UniqueIdentifier>{61e650a4-9e92-4512-8b66-abeca5d1135c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\7Observer">
+      <UniqueIdentifier>{994536cd-3fc7-48c4-a7cd-ce824eef1383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\7Observer\0Observer">
+      <UniqueIdentifier>{bab29c86-1e36-4883-8171-c68094eb493b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\7Observer\1Subject">
+      <UniqueIdentifier>{74e179c5-8c05-4a6b-9ec6-b23bc8733f8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\6Manager\3SubjectManager">
+      <UniqueIdentifier>{d4fda53c-b6bc-4b87-8f3d-c18f76c5c6c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\2Observer">
+      <UniqueIdentifier>{7baca698-fc3f-4bf3-8b8d-16f1300deeea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\2Observer\0PlayerObserver">
+      <UniqueIdentifier>{e332b8ac-7964-44d8-9139-5157837905dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\1SkySphere">
+      <UniqueIdentifier>{28932865-6d57-46f8-909b-869c2c6d0988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\5Texture">
+      <UniqueIdentifier>{a51dc57d-8e67-424a-853c-0c603ed6cc18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\6Trail">
+      <UniqueIdentifier>{0d47b10a-80a5-403b-9f66-67b9881e5443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\8UI">
+      <UniqueIdentifier>{4ceaa78c-6dfe-4d7f-a497-439f0c5d7251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\8UI\0StaticUI">
+      <UniqueIdentifier>{444bbf12-5edf-4e57-b3bb-00452de6a601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\8UI\1DynamicUI">
+      <UniqueIdentifier>{f59b0af9-0cad-4627-8c67-d924dbf98eee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\3UI">
+      <UniqueIdentifier>{39f575cc-9fe0-4496-8b9c-e3c0083bda80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\3UI\0AimPoint">
+      <UniqueIdentifier>{feb3bac0-39be-4ec5-be4e-e31f8b0d22fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\3UI\1HealthPoint">
+      <UniqueIdentifier>{9856247a-b1d9-4f7e-8de8-3ec0f9c0f6aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\3UI\1HealthPoint\0HealthPointGroup">
+      <UniqueIdentifier>{47791393-20ae-4f71-a308-bd6bee6f910b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\5Monsters">
+      <UniqueIdentifier>{617a55ae-fccc-4721-a757-201a71578e79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\6Manager\4RaycastManager">
+      <UniqueIdentifier>{0ef24db2-b9ff-4abb-8275-34716da69a20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\9TextureEffect">
+      <UniqueIdentifier>{4353569a-9624-4fb1-ab50-e689cd7fba06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\7Collider">
+      <UniqueIdentifier>{08011c9c-b8fd-4d86-b362-38411b746984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\7Collider\0CollisionSphere">
+      <UniqueIdentifier>{f13798a2-f961-47b6-82fb-5c2437552f2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\6Missile">
+      <UniqueIdentifier>{85c75591-99ba-4cdf-a2bf-1a4fbed60c6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\6Manager\5ObjectManager">
+      <UniqueIdentifier>{c53f78b0-4238-4b3c-85b7-eb5fec134cca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\5Monsters\0Monster">
+      <UniqueIdentifier>{ac56ee2e-7cc4-4099-aad8-48545ad655bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\5Monsters\1MonsterBullets">
+      <UniqueIdentifier>{1792dfb5-a384-46ad-87a1-7f84b4227ca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\3UI\2LockPoint">
+      <UniqueIdentifier>{d0373f5c-7d0e-47fd-8f2e-6aa24a0e73d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\7Cloud">
+      <UniqueIdentifier>{b1635ba7-bb40-4892-bd24-0ac873d07c1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\2Plane">
+      <UniqueIdentifier>{8ec42cc9-dd16-423e-abe3-c68ca20bee62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\5Monsters\0Monster\0Monster1">
+      <UniqueIdentifier>{dc5ff974-9b5b-4873-9719-8d5e9e347e3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\5Monsters\0Monster\1Monster2">
+      <UniqueIdentifier>{12ccf4c7-58f3-4836-aa7e-bcb2a42352e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\5Monsters\0Monster\2Boss">
+      <UniqueIdentifier>{67b2d1f2-da84-446d-a82e-d4c3881e3885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\0Scene\0GameScene">
+      <UniqueIdentifier>{9433ede7-ddda-43f8-8e5b-49a0581c9af3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\0Scene\1LoadScene">
+      <UniqueIdentifier>{eaf923df-ac0c-427c-b99b-5539bbde7f21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\0Scene\2MenuScene">
+      <UniqueIdentifier>{461719bc-3b9c-4329-bd2e-35680db51436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\10Button">
+      <UniqueIdentifier>{0b04f80c-9093-4657-81c9-2e63ae566f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\0Camera\0PlaneCamera">
+      <UniqueIdentifier>{a242a7a2-0d21-4ae5-8434-010fb4524513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\0Camera\1MenuCamera">
+      <UniqueIdentifier>{ef7b9004-8e29-41d0-b233-054982343049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\3Manager">
+      <UniqueIdentifier>{29b55aa0-5609-4e2a-818e-d4824efcc995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\3Manager\0MonsterSpawnManager">
+      <UniqueIdentifier>{f1a73837-ef53-4df6-a55a-dbbdb905b0c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\6Manager\6CollisionManager">
+      <UniqueIdentifier>{bb45b7e9-cfe5-479f-9667-287cb5b0e934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\6Manager\7RendererManager">
+      <UniqueIdentifier>{104b434d-9683-463d-b6bf-801854c3e450}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\8Sea">
+      <UniqueIdentifier>{0ae461a6-c62e-4418-9a3a-f273b0d40b32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\9Shadow">
+      <UniqueIdentifier>{78c80751-4004-41e0-bc7b-b628fa92469d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\4Shader\2ShadowShader">
+      <UniqueIdentifier>{ad6c8b13-8c95-4100-82b6-1b765b1bd9ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\4Shader\0DefaultShader">
+      <UniqueIdentifier>{9f19bae3-af5c-4a38-9397-67bdb4e0fd72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\4Shader\3SeaShader">
+      <UniqueIdentifier>{72551fd2-f0e9-4cf1-86a9-304acbf4606c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\0Camera\2CutSceneCamera">
+      <UniqueIdentifier>{d6c7227a-4476-4f64-b2ec-3ff0003a165a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\4Component\8Camera">
+      <UniqueIdentifier>{ccfb5abe-cac3-44c2-8818-a098940b7042}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\3UI\3Radar">
+      <UniqueIdentifier>{fd1c69c1-1a7b-4def-b5e5-5bd89f17aa86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\3UI\3Radar\0RadarPlane">
+      <UniqueIdentifier>{f8215b2d-4851-4c74-9aac-c226220e303d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\3UI\3Radar\1RadarDot">
+      <UniqueIdentifier>{00898c09-68fb-46e9-aec1-da32c3f567a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\3Manager\1CameraManager">
+      <UniqueIdentifier>{66de4583-e3d3-4882-8b20-adc7246e442a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\5Monsters\0Monster\3BossGuns">
+      <UniqueIdentifier>{7585ac3e-86a2-4e68-88c4-79954db76bcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\5Monsters\0Monster\3BossGuns\0BossDashGun">
+      <UniqueIdentifier>{7dc7d168-3f02-40d9-a140-9e29f90f18ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\5Monsters\0Monster\3BossGuns\1BossShootGun">
+      <UniqueIdentifier>{aad9c8cd-f828-401d-a6e9-2fa1c9eb1166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\3Manager\2MonsterInfoManager">
+      <UniqueIdentifier>{cb773fc6-25dd-4adf-860c-cb52e8571c4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\3Manager\4CloudSpawnManager">
+      <UniqueIdentifier>{8ca79362-f69c-47e1-b2fc-9fe862ea522d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1Engine\11Text">
+      <UniqueIdentifier>{0f34b5fe-7af2-4d59-a6a9-632e83561806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\0Scene\3MyMenuScene">
+      <UniqueIdentifier>{ff468159-9dfe-4252-8922-86a9074257f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\0MyUI">
+      <UniqueIdentifier>{2ea7302e-700a-4a5c-8922-d809bedc1c60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\0MyUI\0MyTitle">
+      <UniqueIdentifier>{41979f73-4cae-4ec1-91e8-269a82f51ccf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\0Scene\4MyGameScene">
+      <UniqueIdentifier>{0a4e8cdf-4534-4197-a50e-a4cdfb71ce9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\0Camera\3MyPlayerCamera">
+      <UniqueIdentifier>{22af7c24-5b82-4b0c-859b-ca366ae27db2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\10MyMap">
+      <UniqueIdentifier>{60b158bd-c301-449f-b6dc-b146050aa186}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DXUT\Optional\directx.ico">
+      <Filter>0Default\Resource Files</Filter>
+    </None>
+    <ClInclude Include="DXUT\Core\DXUT.h">
+      <Filter>0Default\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTenum.h">
+      <Filter>0Default\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTmisc.h">
+      <Filter>0Default\DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Core\DXUT.cpp">
+      <Filter>0Default\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTenum.cpp">
+      <Filter>0Default\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTmisc.cpp">
+      <Filter>0Default\DXUT</Filter>
+    </ClCompile>
+    <ClInclude Include="DXUT\Optional\DXUTcamera.h">
+      <Filter>0Default\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTgui.h">
+      <Filter>0Default\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTres.h">
+      <Filter>0Default\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTsettingsdlg.h">
+      <Filter>0Default\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmesh.h">
+      <Filter>0Default\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmisc.h">
+      <Filter>0Default\DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Optional\DXUTcamera.cpp">
+      <Filter>0Default\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTgui.cpp">
+      <Filter>0Default\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTres.cpp">
+      <Filter>0Default\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTsettingsdlg.cpp">
+      <Filter>0Default\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmesh.cpp">
+      <Filter>0Default\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmisc.cpp">
+      <Filter>0Default\DXUT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ATC.cpp">
+      <Filter>0Default</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Base.cpp">
+      <Filter>1Engine\0Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component.cpp">
+      <Filter>1Engine\4Component\0Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameObject.cpp">
+      <Filter>1Engine\3GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Layer.cpp">
+      <Filter>1Engine\2Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Scene.cpp">
+      <Filter>1Engine\1Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\ResourceManager.cpp">
+      <Filter>1Engine\6Manager\1ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Resources.cpp">
+      <Filter>1Engine\4Component\2Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\SceneManager.cpp">
+      <Filter>1Engine\6Manager\0SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Singleton.cpp">
+      <Filter>1Engine\5Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\StaticMesh.cpp">
+      <Filter>1Engine\4Component\3Mesh\0StaticMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Transform.cpp">
+      <Filter>1Engine\4Component\1Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GraphicsManager.cpp">
+      <Filter>1Engine\6Manager\2GraphicsManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Shader.cpp">
+      <Filter>1Engine\4Component\4Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\DynamicMesh.cpp">
+      <Filter>1Engine\4Component\3Mesh\1DynamicMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\MeshHierarchy.cpp">
+      <Filter>1Engine\4Component\3Mesh\1DynamicMesh\MeshHierarchy</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\AnimationController.cpp">
+      <Filter>1Engine\4Component\3Mesh\1DynamicMesh\AnimationController</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Subject.cpp">
+      <Filter>1Engine\7Observer\1Subject</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Observer.cpp">
+      <Filter>1Engine\7Observer\0Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\SubjectManager.cpp">
+      <Filter>1Engine\6Manager\3SubjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\PlayerObserver.cpp">
+      <Filter>2Client\2Observer\0PlayerObserver</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\SkySphere.cpp">
+      <Filter>2Client\1GameObject\1SkySphere</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Texture.cpp">
+      <Filter>1Engine\4Component\5Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Trail.cpp">
+      <Filter>1Engine\4Component\6Trail</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\UIBase.cpp">
+      <Filter>1Engine\8UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\DynamicUI.cpp">
+      <Filter>1Engine\8UI\1DynamicUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\StaticUI.cpp">
+      <Filter>1Engine\8UI\0StaticUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\AimPoint.cpp">
+      <Filter>2Client\1GameObject\3UI\0AimPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\HealthPoint.cpp">
+      <Filter>2Client\1GameObject\3UI\1HealthPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\HealthPointGroup.cpp">
+      <Filter>2Client\1GameObject\3UI\1HealthPoint\0HealthPointGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\RaycastManager.cpp">
+      <Filter>1Engine\6Manager\4RaycastManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\TextureEffect.cpp">
+      <Filter>1Engine\9TextureEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\CollisionSphere.cpp">
+      <Filter>1Engine\4Component\7Collider\0CollisionSphere</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Collider.cpp">
+      <Filter>1Engine\4Component\7Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\CollisionManager.cpp">
+      <Filter>1Engine\6Manager\6CollisionManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Missile.cpp">
+      <Filter>2Client\1GameObject\6Missile</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\ObjectManager.cpp">
+      <Filter>1Engine\6Manager\5ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\MonsterBase.cpp">
+      <Filter>2Client\1GameObject\5Monsters\0Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\LockPoint.cpp">
+      <Filter>2Client\1GameObject\3UI\2LockPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\MonsterBullet.cpp">
+      <Filter>2Client\1GameObject\5Monsters\1MonsterBullets</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Cloud.cpp">
+      <Filter>2Client\1GameObject\7Cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Monster1.cpp">
+      <Filter>2Client\1GameObject\5Monsters\0Monster\0Monster1</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Monster2.cpp">
+      <Filter>2Client\1GameObject\5Monsters\0Monster\1Monster2</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\GameScene.cpp">
+      <Filter>2Client\0Scene\0GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\MenuScene.cpp">
+      <Filter>2Client\0Scene\2MenuScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\LoadScene.cpp">
+      <Filter>2Client\0Scene\1LoadScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Button.cpp">
+      <Filter>1Engine\10Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\PlaneCamera.cpp">
+      <Filter>2Client\1GameObject\0Camera\0PlaneCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\MenuCamera.cpp">
+      <Filter>2Client\1GameObject\0Camera\1MenuCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\MonsterSpawnManager.cpp">
+      <Filter>2Client\3Manager\0MonsterSpawnManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\RenderManager.cpp">
+      <Filter>1Engine\6Manager\7RendererManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Sea.cpp">
+      <Filter>2Client\1GameObject\8Sea</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Shadow.cpp">
+      <Filter>2Client\1GameObject\9Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Plane.cpp">
+      <Filter>2Client\1GameObject\2Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\Boss.cpp">
+      <Filter>2Client\1GameObject\5Monsters\0Monster\2Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\BossShootGun.cpp">
+      <Filter>2Client\1GameObject\5Monsters\0Monster\3BossGuns\1BossShootGun</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\BossDashGun.cpp">
+      <Filter>2Client\1GameObject\5Monsters\0Monster\3BossGuns\0BossDashGun</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Camera.cpp">
+      <Filter>1Engine\4Component\8Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\CutSceneCamera.cpp">
+      <Filter>2Client\1GameObject\0Camera\2CutSceneCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\RadarPlane.cpp">
+      <Filter>2Client\1GameObject\3UI\3Radar\0RadarPlane</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\RadarDot.cpp">
+      <Filter>2Client\1GameObject\3UI\3Radar\1RadarDot</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\CameraManager.cpp">
+      <Filter>2Client\3Manager\1CameraManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\BossGuns.cpp">
+      <Filter>2Client\1GameObject\5Monsters\0Monster\3BossGuns</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\MonsterInfoManager.cpp">
+      <Filter>2Client\3Manager\2MonsterInfoManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\CloudSpawnManager.cpp">
+      <Filter>2Client\3Manager\4CloudSpawnManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Text.cpp">
+      <Filter>1Engine\11Text</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMenuScene.cpp">
+      <Filter>2Client\0Scene\3MyMenuScene</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTitle.cpp">
+      <Filter>2Client\1GameObject\0MyUI\0MyTitle</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGameScene.cpp">
+      <Filter>2Client\0Scene\4MyGameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPlayerCamera.cpp">
+      <Filter>2Client\1GameObject\0Camera\3MyPlayerCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMap.cpp">
+      <Filter>2Client\1GameObject\10MyMap</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>0Default\Resource Files</Filter>
+    </CLInclude>
+    <ResourceCompile Include="ATC.rc">
+      <Filter>0Default\Resource Files</Filter>
+    </ResourceCompile>
+    <ClInclude Include="Engine\Base.h">
+      <Filter>1Engine\0Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component.h">
+      <Filter>1Engine\4Component\0Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameObject.h">
+      <Filter>1Engine\3GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Layer.h">
+      <Filter>1Engine\2Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Scene.h">
+      <Filter>1Engine\1Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ResourceManager.h">
+      <Filter>1Engine\6Manager\1ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Resources.h">
+      <Filter>1Engine\4Component\2Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\SceneManager.h">
+      <Filter>1Engine\6Manager\0SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Singleton.h">
+      <Filter>1Engine\5Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\StaticMesh.h">
+      <Filter>1Engine\4Component\3Mesh\0StaticMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Transform.h">
+      <Filter>1Engine\4Component\1Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GraphicsManager.h">
+      <Filter>1Engine\6Manager\2GraphicsManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Shader.h">
+      <Filter>1Engine\4Component\4Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\DynamicMesh.h">
+      <Filter>1Engine\4Component\3Mesh\1DynamicMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\MeshHierarchy.h">
+      <Filter>1Engine\4Component\3Mesh\1DynamicMesh\MeshHierarchy</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\AnimationController.h">
+      <Filter>1Engine\4Component\3Mesh\1DynamicMesh\AnimationController</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Subject.h">
+      <Filter>1Engine\7Observer\1Subject</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Observer.h">
+      <Filter>1Engine\7Observer\0Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\SubjectManager.h">
+      <Filter>1Engine\6Manager\3SubjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\PlayerObserver.h">
+      <Filter>2Client\2Observer\0PlayerObserver</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\SkySphere.h">
+      <Filter>2Client\1GameObject\1SkySphere</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Texture.h">
+      <Filter>1Engine\4Component\5Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Trail.h">
+      <Filter>1Engine\4Component\6Trail</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\UIBase.h">
+      <Filter>1Engine\8UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\DynamicUI.h">
+      <Filter>1Engine\8UI\1DynamicUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\StaticUI.h">
+      <Filter>1Engine\8UI\0StaticUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\AimPoint.h">
+      <Filter>2Client\1GameObject\3UI\0AimPoint</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\HealthPoint.h">
+      <Filter>2Client\1GameObject\3UI\1HealthPoint</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\HealthPointGroup.h">
+      <Filter>2Client\1GameObject\3UI\1HealthPoint\0HealthPointGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\RaycastManager.h">
+      <Filter>1Engine\6Manager\4RaycastManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\TextureEffect.h">
+      <Filter>1Engine\9TextureEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CollisionSphere.h">
+      <Filter>1Engine\4Component\7Collider\0CollisionSphere</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Collider.h">
+      <Filter>1Engine\4Component\7Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CollisionManager.h">
+      <Filter>1Engine\6Manager\6CollisionManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Missile.h">
+      <Filter>2Client\1GameObject\6Missile</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ObjectManager.h">
+      <Filter>1Engine\6Manager\5ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\MonsterBase.h">
+      <Filter>2Client\1GameObject\5Monsters\0Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\LockPoint.h">
+      <Filter>2Client\1GameObject\3UI\2LockPoint</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\MonsterBullet.h">
+      <Filter>2Client\1GameObject\5Monsters\1MonsterBullets</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Cloud.h">
+      <Filter>2Client\1GameObject\7Cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Monster1.h">
+      <Filter>2Client\1GameObject\5Monsters\0Monster\0Monster1</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Monster2.h">
+      <Filter>2Client\1GameObject\5Monsters\0Monster\1Monster2</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\GameScene.h">
+      <Filter>2Client\0Scene\0GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\MenuScene.h">
+      <Filter>2Client\0Scene\2MenuScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\LoadScene.h">
+      <Filter>2Client\0Scene\1LoadScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Button.h">
+      <Filter>1Engine\10Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\PlaneCamera.h">
+      <Filter>2Client\1GameObject\0Camera\0PlaneCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\MenuCamera.h">
+      <Filter>2Client\1GameObject\0Camera\1MenuCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\MonsterSpawnManager.h">
+      <Filter>2Client\3Manager\0MonsterSpawnManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\RenderManager.h">
+      <Filter>1Engine\6Manager\7RendererManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Sea.h">
+      <Filter>2Client\1GameObject\8Sea</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Shadow.h">
+      <Filter>2Client\1GameObject\9Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Plane.h">
+      <Filter>2Client\1GameObject\2Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\Boss.h">
+      <Filter>2Client\1GameObject\5Monsters\0Monster\2Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\BossShootGun.h">
+      <Filter>2Client\1GameObject\5Monsters\0Monster\3BossGuns\1BossShootGun</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\BossDashGun.h">
+      <Filter>2Client\1GameObject\5Monsters\0Monster\3BossGuns\0BossDashGun</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Camera.h">
+      <Filter>1Engine\4Component\8Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\CutSceneCamera.h">
+      <Filter>2Client\1GameObject\0Camera\2CutSceneCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\RadarPlane.h">
+      <Filter>2Client\1GameObject\3UI\3Radar\0RadarPlane</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\RadarDot.h">
+      <Filter>2Client\1GameObject\3UI\3Radar\1RadarDot</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\CameraManager.h">
+      <Filter>2Client\3Manager\1CameraManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\BossGuns.h">
+      <Filter>2Client\1GameObject\5Monsters\0Monster\3BossGuns</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\MonsterInfoManager.h">
+      <Filter>2Client\3Manager\2MonsterInfoManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\CloudSpawnManager.h">
+      <Filter>2Client\3Manager\4CloudSpawnManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Text.h">
+      <Filter>1Engine\11Text</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMenuScene.h">
+      <Filter>2Client\0Scene\3MyMenuScene</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTitle.h">
+      <Filter>2Client\1GameObject\0MyUI\0MyTitle</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGameScene.h">
+      <Filter>2Client\0Scene\4MyGameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPlayerCamera.h">
+      <Filter>2Client\1GameObject\0Camera\3MyPlayerCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMap.h">
+      <Filter>2Client\1GameObject\10MyMap</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Resources\Shaders\DefaultShader.fx">
+      <Filter>1Engine\4Component\4Shader\0DefaultShader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\DynamicMeshShader.fx">
+      <Filter>1Engine\4Component\4Shader\1DynamicMeshShader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\ShadowShader.fx">
+      <Filter>1Engine\4Component\4Shader\2ShadowShader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\SeaShader.fx">
+      <Filter>1Engine\4Component\4Shader\3SeaShader</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
