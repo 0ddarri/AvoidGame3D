@@ -17,7 +17,7 @@ MyMap::MyMap(void)
 	componentgroup.emplace(L"Shader", shader);
 
 	transform->scale = { 1,1,1 };
-	transform->localPosition = D3DXVECTOR3(1, -0.2, 0);
+	transform->localPosition = D3DXVECTOR3(0, 0, 0);
 	std::cout << "Map »ý¼ºÀÚ" << std::endl;
 
 	memcpy(&transform->worldMatrix._41, transform->localPosition, sizeof(D3DXVECTOR3));

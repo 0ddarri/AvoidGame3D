@@ -6,7 +6,9 @@
 #include "MyPlayerCamera.h"
 #include "Client/PlaneCamera.h"
 #include "MyMap.h"
+#include "MyPlayer.h"
 #include "Client/SkySphere.h"
+#include "PlayerManager.h"
 #include "MyGameScene.h"
 
 MyGameScene::MyGameScene(void)
@@ -41,6 +43,9 @@ void MyGameScene::Start(void)
 
 	MyMap* map = new MyMap();
 	Scene::AddGameObject(OBJ1, L"Map", map);
+
+	PlayerManager::GetInstance()->Initialize();
+	Scene::AddGameObject(OBJ2, L"Player", PlayerManager::GetInstance()->GetPlayer());
 }
 
 void MyGameScene::Update(const FLOAT& dt)

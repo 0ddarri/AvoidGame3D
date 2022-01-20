@@ -48,11 +48,21 @@ void Transform::ReleaseParent(void)
 }
 
 
-void Transform::Rotate(RotType _rotType, float _angle)
+void Transform::Rotate(RotType _rotType, float _angle) // 이게 태환선배가 만들어놓은건데
 {
 	//reinterpret_cast는 뭐야
-	D3DXVECTOR3 axis = *reinterpret_cast<D3DXVECTOR3*>(&worldMatrix.m[_rotType][0]); // 대충 행렬값을 Vector3로 바꾼건가?
+	D3DXVECTOR3 axis = *reinterpret_cast<D3DXVECTOR3*>(&worldMatrix.m[_rotType][0]); // 이거 먼지 잘 모르겠어서
 
+	D3DXQUATERNION rot;
+	D3DXQuaternionRotationAxis(&rot, &axis, _angle); // 임의의 축으로 돌린다
+	quaternion *= rot; // 계속 회전시키는건가? Unity Rotate랑 비슷한건가
+}
+
+void Transform::RotateAxis(D3DXVECTOR3 _axis, float _angle) // 벡터값 받아오는 회전으로 바꾼거 쓰고 있는데
+{
+	//reinterpret_cast는 뭐야
+	//D3DXVECTOR3 axis = *reinterpret_cast<D3DXVECTOR3*>(&worldMatrix.m[_rotType][0]); // 대충 행렬값을 Vector3로 바꾼건가?
+	D3DXVECTOR3 axis = _axis;
 	D3DXQUATERNION rot;
 	D3DXQuaternionRotationAxis(&rot, &axis, _angle); // 임의의 축으로 돌린다
 	quaternion *= rot; // 계속 회전시키는건가? Unity Rotate랑 비슷한건가

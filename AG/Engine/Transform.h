@@ -24,10 +24,9 @@ public:
 	D3DXVECTOR3 scale; // 스케일
 
 	D3DXMATRIX worldMatrix; // 
-
 	D3DXVECTOR3 worldPosition; // 월드포지션
 
-	FLOAT slerpSpeed = 3.f; // slerp 속도래
+	FLOAT slerpSpeed = 8.f; // slerp 속도래
 	bool quaternionMode = true; // 쿼터니언모드래 slerp 쿼터니언모드설정인가
 
 	void Update(const FLOAT& dt) override;
@@ -36,6 +35,7 @@ public:
 	void ReleaseParent(void); // 부모 해제
 
 	void Rotate(RotType _rotType, float _angle); // 회전 
+	void RotateAxis(D3DXVECTOR3 _axis, float _angle); // 회전
 
 	bool Lerp(D3DXVECTOR3& _position, const D3DXVECTOR3& _destination, const FLOAT& _dt, const FLOAT& _distance = 0.5f) // Lerp
 	{
@@ -71,7 +71,6 @@ public:
 		D3DXVECTOR3 result{ x,y,z };
 		return result;
 	}
-
 
 	void Free(void) override;
 };

@@ -282,6 +282,12 @@
     <Filter Include="2Client\1GameObject\10MyMap">
       <UniqueIdentifier>{60b158bd-c301-449f-b6dc-b146050aa186}</UniqueIdentifier>
     </Filter>
+    <Filter Include="2Client\1GameObject\11MyPlayer">
+      <UniqueIdentifier>{e8c1f876-7612-47d5-8110-6ac2c7e84b56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\11MyPlayer\PlayerManager">
+      <UniqueIdentifier>{0fe1845d-0888-4361-abad-5893ad42aefb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="DXUT\Optional\directx.ico">
@@ -556,6 +562,12 @@
     <ClCompile Include="MyMap.cpp">
       <Filter>2Client\1GameObject\10MyMap</Filter>
     </ClCompile>
+    <ClCompile Include="MyPlayer.cpp">
+      <Filter>2Client\1GameObject\11MyPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerManager.cpp">
+      <Filter>2Client\1GameObject\11MyPlayer\PlayerManager</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">
@@ -773,6 +785,12 @@
     </ClInclude>
     <ClInclude Include="MyMap.h">
       <Filter>2Client\1GameObject\10MyMap</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPlayer.h">
+      <Filter>2Client\1GameObject\11MyPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerManager.h">
+      <Filter>2Client\1GameObject\11MyPlayer\PlayerManager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

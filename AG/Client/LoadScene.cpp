@@ -29,6 +29,7 @@ void LoadScene::Start(void)
 	Engine::ResourceManager::GetInstance()->AddTexture(L"Resources/Textures/Start.png", L"Start", 1);
 	Engine::ResourceManager::GetInstance()->AddTexture(L"Resources/Textures/Title.png", L"Title", 1); // 타이틀 스프라이트 추가
 	Engine::ResourceManager::GetInstance()->AddMesh(MeshType::STATIC, L"Resources/Meshes/Static/", L"map1.X", L"Map");
+	Engine::ResourceManager::GetInstance()->AddMesh(MeshType::STATIC, L"Resources/Meshes/Static/", L"player2222.X", L"Player");
 	Engine::ResourceManager::GetInstance()->AddTexture(L"Resources/Textures/Select.png", L"Select", 1);
 	Engine::ResourceManager::GetInstance()->AddTexture(L"Resources/Textures/Settings.png", L"Settings", 1);
 	Engine::ResourceManager::GetInstance()->AddTexture(L"Resources/Textures/Exit.png", L"Exit", 1);

@@ -10,8 +10,10 @@ class MyPlayerCamera final : public Engine::GameObject
 {
 private:
 	Engine::Transform* transform = nullptr;
-	Engine::Transform* targetTransform = nullptr;
 	Engine::Camera* _camera = nullptr;
+
+	float xrot = 0;
+	float yrot = 0;
 protected:
 public:
 	explicit MyPlayerCamera(void);
@@ -22,5 +24,7 @@ public:
 	void LateUpdate(const FLOAT& dt) override;
 	void Render(const FLOAT& dt) override;
 	void Free(void) override;
+
+	float FOV;
 };
 

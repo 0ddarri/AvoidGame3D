@@ -456,8 +456,10 @@
     <ClCompile Include="MyGameScene.cpp" />
     <ClCompile Include="MyMap.cpp" />
     <ClCompile Include="MyMenuScene.cpp" />
+    <ClCompile Include="MyPlayer.cpp" />
     <ClCompile Include="MyPlayerCamera.cpp" />
     <ClCompile Include="MyTitle.cpp" />
+    <ClCompile Include="PlayerManager.cpp" />
     <ClInclude Include="Client\AimPoint.h" />
     <ClInclude Include="Client\Boss.h" />
     <ClInclude Include="Client\BossDashGun.h" />
@@ -558,8 +560,10 @@
     <ClInclude Include="MyGameScene.h" />
     <ClInclude Include="MyMap.h" />
     <ClInclude Include="MyMenuScene.h" />
+    <ClInclude Include="MyPlayer.h" />
     <ClInclude Include="MyPlayerCamera.h" />
     <ClInclude Include="MyTitle.h" />
+    <ClInclude Include="PlayerManager.h" />
     <CLInclude Include="resource.h" />
     <ResourceCompile Include="ATC.rc" />
   </ItemGroup>
