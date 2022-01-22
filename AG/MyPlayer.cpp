@@ -62,6 +62,12 @@ INT MyPlayer::Update(const FLOAT& dt)
 
 	Engine::RenderManager::GetInstance()->AddRenderObject(ID_NORMALMESH, this);
 
+	std::cout << transform->localPosition.x << ", " << transform->localPosition.y << ", " << transform->localPosition.z << std::endl;
+	if (transform->localPosition.x < -0.7f) transform->localPosition.x = -0.7f;
+	if (transform->localPosition.x > 0.7f) transform->localPosition.x = 0.7f;
+	if (transform->localPosition.z < -0.7f) transform->localPosition.z = -0.7f;
+	if (transform->localPosition.z > 0.7f) transform->localPosition.z = 0.7f;
+
 	GameObject::Update(dt);
 	return OBJALIVE;
 }

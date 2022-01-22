@@ -56,8 +56,6 @@ INT MyPlayerCamera::Update(const FLOAT& dt)
 
 	xrot += PlayerManager::GetInstance()->cursorpos.y* dt * 0.1f;
 	yrot += PlayerManager::GetInstance()->cursorpos.x* dt * 0.1f;
-	std::cout << "xrot " << xrot << std::endl;
-	std::cout << "yrot " << yrot << std::endl;
 	if (xrot < -1.3f) xrot = -1.3f;
 	if (xrot > 1.3f) xrot = 1.3f;
 

@@ -288,6 +288,15 @@
     <Filter Include="2Client\1GameObject\11MyPlayer\PlayerManager">
       <UniqueIdentifier>{0fe1845d-0888-4361-abad-5893ad42aefb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="2Client\1GameObject\12MyRock">
+      <UniqueIdentifier>{3f072d62-4165-4c0a-af76-998ee4c2a7bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\12MyRock\Rock">
+      <UniqueIdentifier>{defb0392-5689-4d43-9af3-18a4048ccbb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\12MyRock\RockManager">
+      <UniqueIdentifier>{8d227cc8-1956-4dfd-a461-28b1d56c1a41}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="DXUT\Optional\directx.ico">
@@ -568,6 +577,12 @@
     <ClCompile Include="PlayerManager.cpp">
       <Filter>2Client\1GameObject\11MyPlayer\PlayerManager</Filter>
     </ClCompile>
+    <ClCompile Include="Rock.cpp">
+      <Filter>2Client\1GameObject\12MyRock\Rock</Filter>
+    </ClCompile>
+    <ClCompile Include="RockManager.cpp">
+      <Filter>2Client\1GameObject\12MyRock\RockManager</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">
@@ -791,6 +806,12 @@
     </ClInclude>
     <ClInclude Include="PlayerManager.h">
       <Filter>2Client\1GameObject\11MyPlayer\PlayerManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Rock.h">
+      <Filter>2Client\1GameObject\12MyRock\Rock</Filter>
+    </ClInclude>
+    <ClInclude Include="RockManager.h">
+      <Filter>2Client\1GameObject\12MyRock\RockManager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

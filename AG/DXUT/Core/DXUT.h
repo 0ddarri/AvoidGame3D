@@ -356,6 +356,7 @@ void      WINAPI DXUTDestroyState(); // Optional method to destroy DXUT's memory
 #include <time.h>
 #include <unordered_map>
 //#include <vld.h> 얘는 뭔데 에러나고있지
+#include<random>
 
 #define NAMESPACE(name) namespace name {
 #define END }

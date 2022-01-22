@@ -460,6 +460,8 @@
     <ClCompile Include="MyPlayerCamera.cpp" />
     <ClCompile Include="MyTitle.cpp" />
     <ClCompile Include="PlayerManager.cpp" />
+    <ClCompile Include="Rock.cpp" />
+    <ClCompile Include="RockManager.cpp" />
     <ClInclude Include="Client\AimPoint.h" />
     <ClInclude Include="Client\Boss.h" />
     <ClInclude Include="Client\BossDashGun.h" />
@@ -524,6 +526,8 @@
     <ClInclude Include="Engine\TextureEffect.h" />
     <ClInclude Include="Engine\Trail.h" />
     <ClInclude Include="Engine\Transform.h" />
+    <ClInclude Include="Rock.h" />
+    <ClInclude Include="RockManager.h" />
     <None Include="DXUT\Optional\directx.ico" />
     <ClInclude Include="DXUT\Core\DXUT.h" />
     <ClInclude Include="DXUT\Core\DXUTenum.h" />

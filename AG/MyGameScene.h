@@ -15,5 +15,8 @@ public:
 	void Exit(void) override;
 
 	void Free(void) override;
+
+	float _spawnTime = 0.0f;
+	float _maxspawnTime = 0.0f;
 };
 
