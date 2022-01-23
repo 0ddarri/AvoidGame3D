@@ -2,9 +2,10 @@
 #include "Engine/Transform.h"
 #include "Engine/ResourceManager.h"
 #include "Engine/RenderManager.h"
+#include "Engine/CollisionManager.h"
 #include "Engine/StaticMesh.h"
-#include "Engine/Collider.h"
 #include "Engine/Shader.h"
+#include "PlayerManager.h"
 #include "Rock.h"
 
 Rock::Rock(void)
@@ -22,6 +23,8 @@ Rock::Rock(void)
 
 	_gravityScale = 1;
 	_visible = false;
+
+	collisionRadius = 0.1f;
 }
 
 Rock::~Rock(void)
@@ -39,15 +42,30 @@ void Rock::Initialize()
 
 void Rock::CollisionEvent(const std::wstring& _objectTag, GameObject* _gameObject)
 {
+
+}
+
+bool Rock::CheckCol()
+{
+	if (D3DXVec3Length(&(transform->localPosition - PlayerManager::GetInstance()->GetPlayerPosition())) < collisionRadius)
+	{
+		std::cout << "Ãæµ¹" << std::endl;
+		PlayerManager::GetInstance()->player->hp--;
+		std::cout << PlayerManager::GetInstance()->player->hp << std::endl;
+		return true;
+	}
+	return false;
 }
 
 INT Rock::Update(const FLOAT& dt)
 {
 	if (_visible)
 	{
+		CheckCol();
 		Engine::RenderManager::GetInstance()->AddRenderObject(ID_NORMALMESH, this);
 		transform->localPosition.y -= _gravityScale * dt;
 	}
+
 
 	GameObject::Update(dt);
 	return OBJALIVE;

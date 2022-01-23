@@ -1,19 +1,20 @@
 #pragma once
 #include "Engine/Singleton.h"
+#include "MyPlayer.h"
 
-class MyPlayer;
 
 NAMESPACE(Engine)
 class GameObject;
 class Transform;
 END
 
-class PlayerManager final : public Engine::Singleton<PlayerManager>
+class PlayerManager : public Engine::Singleton<PlayerManager>
 {
 private:
-	MyPlayer* player;
 protected:
 public:
+	MyPlayer* player;
+
 	void Initialize();
 
 	Engine::GameObject* GetPlayer();

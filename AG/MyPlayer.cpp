@@ -6,6 +6,7 @@
 #include "Engine/Collider.h"
 #include "Engine/Shader.h"
 #include "PlayerManager.h"
+#include "Engine/SceneManager.h"
 #include "MyPlayer.h"
 
 MyPlayer::MyPlayer(void)
@@ -23,6 +24,8 @@ MyPlayer::MyPlayer(void)
 	memcpy(&transform->worldMatrix._41, transform->localPosition, sizeof(D3DXVECTOR3));
 	std::cout << "Player »ý¼ºÀÚ" << std::endl;
 	_speed = 10.0f;
+
+	hp = 3;
 }
 
 MyPlayer::~MyPlayer(void)
@@ -62,7 +65,7 @@ INT MyPlayer::Update(const FLOAT& dt)
 
 	Engine::RenderManager::GetInstance()->AddRenderObject(ID_NORMALMESH, this);
 
-	std::cout << transform->localPosition.x << ", " << transform->localPosition.y << ", " << transform->localPosition.z << std::endl;
+	//std::cout << transform->localPosition.x << ", " << transform->localPosition.y << ", " << transform->localPosition.z << std::endl;
 	if (transform->localPosition.x < -0.7f) transform->localPosition.x = -0.7f;
 	if (transform->localPosition.x > 0.7f) transform->localPosition.x = 0.7f;
 	if (transform->localPosition.z < -0.7f) transform->localPosition.z = -0.7f;
@@ -111,4 +114,10 @@ Engine::Transform* MyPlayer::GetTransform()
 D3DXQUATERNION MyPlayer::GetQuat()
 {
 	return transform->quaternion;
+}
+
+bool MyPlayer::CheckDie()
+{
+	if (hp <= 0) return true;
+	return false;
 }

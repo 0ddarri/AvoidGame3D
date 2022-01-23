@@ -1,6 +1,7 @@
 #include "DXUT.h"
 #include "Engine/SceneManager.h"
 #include "Engine/GraphicsManager.h"
+#include "Engine/CollisionManager.h"
 #include "Engine/Layer.h"
 #include "Client/CameraManager.h"
 #include "MyPlayerCamera.h"
@@ -31,14 +32,9 @@ void MyGameScene::Start(void)
 
 	Engine::Layer* l = new Engine::Layer();
 	Engine::Layer* l2 = new Engine::Layer();
-	Engine::Layer* effect = new Engine::Layer();
-	Engine::Layer* Ui = new Engine::Layer();
 
 	layergroup.emplace(OBJ1, l);
 	layergroup.emplace(OBJ2, l2);
-	layergroup.emplace(EFFECT, effect);
-	layergroup.emplace(UI, Ui);
-
 
 	CameraManager::GetInstance()->AddCamera(CAM_PLAYER, new MyPlayerCamera());
 	CameraManager::GetInstance()->SetCamera(CAM_PLAYER);
@@ -82,6 +78,12 @@ void MyGameScene::Update(const FLOAT& dt)
 		std::cout << distr(eng) << std::endl;
 	}
 	RockManager::GetInstance()->DisableRock();
+
+	if (PlayerManager::GetInstance()->player->CheckDie() || DXUTWasKeyPressed('J'))
+	{
+		Engine::SceneManager::GetInstance()->SetScene(L"¸Þ´º");
+		return;
+	}
 }
 
 void MyGameScene::LateUpdate(const FLOAT& dt)
@@ -92,6 +94,8 @@ void MyGameScene::LateUpdate(const FLOAT& dt)
 
 void MyGameScene::Exit(void)
 {
+	Engine::CollisionManager::GetInstance()->ClearData();
+	RockManager::GetInstance()->DeleteRock();
 	Engine::GraphicsManager::GetInstance()->DeleteSprite();
 	CameraManager::GetInstance()->DeleteCameraDatas();
 	Scene::Exit();
@@ -99,5 +103,8 @@ void MyGameScene::Exit(void)
 
 void MyGameScene::Free(void)
 {
+	RockManager::GetInstance()->DeleteRock();
+	Engine::GraphicsManager::GetInstance()->DeleteSprite();
+	CameraManager::GetInstance()->DeleteCameraDatas();
 	Scene::Free();
 }

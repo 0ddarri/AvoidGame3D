@@ -27,7 +27,7 @@ void MyPlayerCamera::Initialize(void)
 		static_cast<float>(DXUTGetD3D9BackBufferSurfaceDesc()->Width) /
 		static_cast<float>(DXUTGetD3D9BackBufferSurfaceDesc()->Height),
 		0.01, 50000);
-	transform->localPosition = { 0,0.5,0 };
+	transform->localPosition = { 0,0.1,0 };
 }
 
 INT MyPlayerCamera::Update(const FLOAT& dt)
@@ -44,7 +44,7 @@ INT MyPlayerCamera::Update(const FLOAT& dt)
 	//vec.y = 0.0f;
 	//transform = PlayerManager::GetInstance()->GetPlayerTransform();
 	D3DXVECTOR3 pos = PlayerManager::GetInstance()->GetPlayerPosition();
-	transform->localPosition = { pos.x,pos.y + 0.4f,pos.z };
+	transform->localPosition = { pos.x,pos.y + 0.3f,pos.z };
 	GameObject::Update(dt);
 	//transform->RotateY(Engine::Transform::RotType::RIGHT , PlayerManager::GetInstance()->cursorpos.y * dt * 0.1f);
 	//transform->RotateAxis(vec, PlayerManager::GetInstance()->cursorpos.y * dt * 0.1f);

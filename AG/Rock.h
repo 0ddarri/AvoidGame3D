@@ -3,7 +3,6 @@
 
 NAMESPACE(Engine)
 class Transform;
-class Collider;
 class StaticMesh;
 class Shader;
 END
@@ -16,6 +15,8 @@ private:
 
 	float _gravityScale;
 	float _velocity;
+
+	float collisionRadius;
 public:
 	Engine::Transform* transform = nullptr;
 
@@ -26,6 +27,8 @@ public:
 
 	void CollisionEvent(const std::wstring& _objectTag, GameObject* _gameObject) override;
 
+	bool CheckCol();
+
 	INT Update(const FLOAT& dt) override;
 	void LateUpdate(const FLOAT& dt) override;
 	void Render(const FLOAT& dt) override;
@@ -35,5 +38,6 @@ public:
 	bool _visible;
 
 	void SetTransform(D3DXVECTOR3 pos);
+
 };
 

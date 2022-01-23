@@ -136,7 +136,10 @@ HRESULT CALLBACK OnResetDevice(IDirect3DDevice9* pd3dDevice, const D3DSURFACE_DE
 void CALLBACK OnFrameMove( double fTime, float fElapsedTime, void* pUserContext )
 {
     if (DXUTWasKeyPressed('P'))
+    {
         Engine::SceneManager::GetInstance()->SetScene(L"¸Þ´º");
+        return;
+    }
 
     Engine::SceneManager::GetInstance()->SceneUpdate(fElapsedTime);
     Engine::SceneManager::GetInstance()->SceneLateUpdate(fElapsedTime);

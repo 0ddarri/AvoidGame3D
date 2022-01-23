@@ -3,7 +3,6 @@
 
 NAMESPACE(Engine)
 class Transform;
-class Collider;
 class StaticMesh;
 class Shader;
 END
@@ -32,5 +31,9 @@ public:
 	D3DXQUATERNION GetQuat();
 
 	float _speed;
+
+	int hp = 3;
+
+	bool CheckDie();
 };
 

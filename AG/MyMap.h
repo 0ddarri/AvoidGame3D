@@ -3,7 +3,6 @@
 
 NAMESPACE(Engine)
 class Transform;
-class Collider;
 class StaticMesh;
 class Shader;
 END
@@ -19,7 +18,7 @@ public:
 	explicit MyMap(void);
 	virtual ~MyMap(void);
 
-	void CollisionEvent(const std::wstring& _objectTag, GameObject* _gameObject) override;
+	void CollisionEvent(const std::wstring& _objectTag, GameObject* _gameObject) override; 
 
 	INT Update(const FLOAT& dt) override;
 	void LateUpdate(const FLOAT& dt) override;

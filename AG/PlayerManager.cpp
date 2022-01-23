@@ -6,6 +6,7 @@
 void PlayerManager::Initialize()
 {
 	player = new MyPlayer();
+	player->hp = 3;
 }
 
 Engine::GameObject* PlayerManager::GetPlayer()

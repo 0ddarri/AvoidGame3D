@@ -34,7 +34,7 @@ void RockManager::DisableRock()
 {
 	for (Rock* rock : _liverocklist)
 	{
-		if (rock->transform->localPosition.y < 0)
+		if (rock->transform->localPosition.y < 0 || rock->CheckCol())
 		{
 			std::cout << "Disable Rock" << std::endl;
 			rock->_visible = false;
@@ -47,10 +47,11 @@ void RockManager::DisableRock()
 
 void RockManager::DeleteRock()
 {
-	for (Rock* rock : _rocklist)
-	{
-		rock->Free();
-	}
+	//for (auto& rock : _rocklist)
+	//{
+	//	rock->Release();
+	//}
+	// 왜 해제를 안하니까 잘되지? ㅈ버근가
 	_rocklist.clear();
 	_liverocklist.clear();
 }

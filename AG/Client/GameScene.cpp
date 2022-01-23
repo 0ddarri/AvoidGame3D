@@ -128,7 +128,10 @@ void GameScene::Update(const FLOAT& dt)
 	}
 
 	if (DXUTWasKeyPressed('P'))
+	{
 		Engine::SceneManager::GetInstance()->SetScene(L"¸Þ´º");
+		std::cout << ">???" << std::endl;
+	}
 
 	if (CameraManager::GetInstance()->GetCurrentIndex() == CAM_CUTSCENE)
 	{

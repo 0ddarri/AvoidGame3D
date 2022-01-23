@@ -59,6 +59,7 @@ void MyMenuScene::LateUpdate(const FLOAT& dt)
 void MyMenuScene::Exit(void)
 {
 	CameraManager::GetInstance()->DeleteCameraDatas();
+	Engine::GraphicsManager::GetInstance()->DeleteSprite();
 	Scene::Exit();
 }
 
