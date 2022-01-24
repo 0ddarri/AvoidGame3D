@@ -12,6 +12,7 @@
 #include "PlayerManager.h"
 #include "RockManager.h"
 #include "Rock.h"
+#include "HpUIManager.h"
 #include "MyGameScene.h"
 
 MyGameScene::MyGameScene(void)
@@ -32,9 +33,11 @@ void MyGameScene::Start(void)
 
 	Engine::Layer* l = new Engine::Layer();
 	Engine::Layer* l2 = new Engine::Layer();
+	Engine::Layer* ui = new Engine::Layer();
 
 	layergroup.emplace(OBJ1, l);
 	layergroup.emplace(OBJ2, l2);
+	layergroup.emplace(UI, ui);
 
 	CameraManager::GetInstance()->AddCamera(CAM_PLAYER, new MyPlayerCamera());
 	CameraManager::GetInstance()->SetCamera(CAM_PLAYER);
@@ -57,6 +60,12 @@ void MyGameScene::Start(void)
 		Scene::AddGameObject(OBJ2, L"Rock", rock);
 		std::cout << "Rock Add" << std::endl;
 	}
+
+	HpUIManager::GetInstance()->CreateHpUI();
+	for (HpUI* hp : HpUIManager::GetInstance()->_hpUIlist)
+	{
+		Scene::AddGameObject(UI, L"HP", hp);
+	}
 }
 
 void MyGameScene::Update(const FLOAT& dt)
@@ -78,6 +87,7 @@ void MyGameScene::Update(const FLOAT& dt)
 		std::cout << distr(eng) << std::endl;
 	}
 	RockManager::GetInstance()->DisableRock();
+	HpUIManager::GetInstance()->SetHpUI();
 
 	if (PlayerManager::GetInstance()->player->CheckDie() || DXUTWasKeyPressed('J'))
 	{
@@ -94,6 +104,7 @@ void MyGameScene::LateUpdate(const FLOAT& dt)
 
 void MyGameScene::Exit(void)
 {
+	HpUIManager::GetInstance()->DeleteUI();
 	Engine::CollisionManager::GetInstance()->ClearData();
 	RockManager::GetInstance()->DeleteRock();
 	Engine::GraphicsManager::GetInstance()->DeleteSprite();

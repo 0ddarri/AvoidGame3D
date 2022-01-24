@@ -38,7 +38,7 @@ INT MyPlayerCamera::Update(const FLOAT& dt)
 
 	//D3DXMATRIX wm = DEVICE->GetTransform(D3DTS_WORLD);
 
-	D3DXVECTOR3 directionVector = -(*reinterpret_cast<D3DXVECTOR3*>(&transform->worldMatrix._31)); // 이거가 디버그 찍어보면 바라보는방향 나오는거같던데용
+	//D3DXVECTOR3 directionVector = -(*reinterpret_cast<D3DXVECTOR3*>(&transform->worldMatrix._31)); // 이거가 디버그 찍어보면 바라보는방향 나오는거같던데용
 	//D3DXVECTOR3 vec = *reinterpret_cast<D3DXVECTOR3*>(&transform->worldMatrix.m[0][0]); // 이거가 느낌상 위아래 회전할때 쓴느거같아서
 	////썼어요
 	//vec.y = 0.0f;
@@ -54,18 +54,18 @@ INT MyPlayerCamera::Update(const FLOAT& dt)
 	//D3DXVECTOR3 cross = *D3DXVec3Cross(&cross, &directionVector, &up);
 	//D3DXVec3Normalize(&cross, &cross);
 
-	xrot += PlayerManager::GetInstance()->cursorpos.y* dt * 0.1f;
-	yrot += PlayerManager::GetInstance()->cursorpos.x* dt * 0.1f;
+	xrot += PlayerManager::GetInstance()->cursorpos.y * dt * 0.1f;
+	yrot += PlayerManager::GetInstance()->cursorpos.x * dt * 0.1f;
 	if (xrot < -1.3f) xrot = -1.3f;
 	if (xrot > 1.3f) xrot = 1.3f;
 
-	D3DXMATRIX matRotX = *D3DXMatrixRotationX(&matRotX, xrot);
-	D3DXMATRIX matRotY = *D3DXMatrixRotationY(&matRotY, yrot);
+	D3DXMATRIX matRotX = *D3DXMatrixRotationX(&matRotX, xrot); // 위아래 회전
+	D3DXMATRIX matRotY = *D3DXMatrixRotationY(&matRotY, yrot); // 옆으로 회전
 
 	D3DXMATRIX matRot = matRotX * matRotY;
 
-	D3DXQUATERNION q = *D3DXQuaternionRotationMatrix(&q, &matRot);
-	transform->quaternion = q; // 둘이 반전됬어용 
+	D3DXQUATERNION q = *D3DXQuaternionRotationMatrix(&q, &matRot); // 돌려
+	transform->quaternion = q;
 
 	return OBJALIVE;
 }

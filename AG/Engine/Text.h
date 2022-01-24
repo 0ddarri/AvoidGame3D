@@ -1,9 +1,10 @@
 #pragma once
 #include "GameObject.h"
 NAMESPACE(Engine)
-class Text :
-    public GameObject
+class Text : public GameObject
 {
-
+private:
+protected:
+public:
 };
 END

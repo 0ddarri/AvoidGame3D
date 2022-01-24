@@ -453,6 +453,8 @@
     <ClCompile Include="Engine\Trail.cpp" />
     <ClCompile Include="Engine\Transform.cpp" />
     <ClCompile Include="Engine\UIBase.cpp" />
+    <ClCompile Include="HpUI.cpp" />
+    <ClCompile Include="HpUIManager.cpp" />
     <ClCompile Include="MyGameScene.cpp" />
     <ClCompile Include="MyMap.cpp" />
     <ClCompile Include="MyMenuScene.cpp" />
@@ -526,6 +528,8 @@
     <ClInclude Include="Engine\TextureEffect.h" />
     <ClInclude Include="Engine\Trail.h" />
     <ClInclude Include="Engine\Transform.h" />
+    <ClInclude Include="HpUI.h" />
+    <ClInclude Include="HpUIManager.h" />
     <ClInclude Include="Rock.h" />
     <ClInclude Include="RockManager.h" />
     <None Include="DXUT\Optional\directx.ico" />

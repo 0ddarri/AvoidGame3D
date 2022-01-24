@@ -1,8 +1,6 @@
 #include "DXUT.h"
 #include "Engine/Transform.h"
 #include "Engine/RenderManager.h"
-#include "Engine/SubjectManager.h"
-#include "Client/PlayerObserver.h"
 #include "MyTitle.h"
 
 MyTitle::MyTitle(std::wstring _textureTag) : Engine::StaticUI(_textureTag)

@@ -297,6 +297,15 @@
     <Filter Include="2Client\1GameObject\12MyRock\RockManager">
       <UniqueIdentifier>{8d227cc8-1956-4dfd-a461-28b1d56c1a41}</UniqueIdentifier>
     </Filter>
+    <Filter Include="2Client\1GameObject\0MyUI\1MyHp">
+      <UniqueIdentifier>{c3242709-4b19-4a07-b899-48bd562bd232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\0MyUI\1MyHp\HpUI">
+      <UniqueIdentifier>{6b9015a7-3190-46d1-a547-b4638a374426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2Client\1GameObject\0MyUI\1MyHp\HpUIManager">
+      <UniqueIdentifier>{c2af74df-f466-48b9-a863-425aa7e8fd2c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="DXUT\Optional\directx.ico">
@@ -583,6 +592,12 @@
     <ClCompile Include="RockManager.cpp">
       <Filter>2Client\1GameObject\12MyRock\RockManager</Filter>
     </ClCompile>
+    <ClCompile Include="HpUI.cpp">
+      <Filter>2Client\1GameObject\0MyUI\1MyHp\HpUI</Filter>
+    </ClCompile>
+    <ClCompile Include="HpUIManager.cpp">
+      <Filter>2Client\1GameObject\0MyUI\1MyHp\HpUIManager</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">
@@ -812,6 +827,12 @@
     </ClInclude>
     <ClInclude Include="RockManager.h">
       <Filter>2Client\1GameObject\12MyRock\RockManager</Filter>
+    </ClInclude>
+    <ClInclude Include="HpUI.h">
+      <Filter>2Client\1GameObject\0MyUI\1MyHp\HpUI</Filter>
+    </ClInclude>
+    <ClInclude Include="HpUIManager.h">
+      <Filter>2Client\1GameObject\0MyUI\1MyHp\HpUIManager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
