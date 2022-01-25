@@ -1,10 +1,13 @@
 #pragma once
 #include "Engine/Scene.h"
+#include "Engine/Text.h"
 #include "HpUI.h"
 
 class MyGameScene final : public Engine::Scene
 {
 private:
+	Engine::Text* _playTimeText;
+	float _playTime = 0.0f;
 protected:
 public:
 	explicit MyGameScene(void);
@@ -19,6 +22,5 @@ public:
 
 	float _spawnTime = 0.0f;
 	float _maxspawnTime = 0.0f;
-
 };
 

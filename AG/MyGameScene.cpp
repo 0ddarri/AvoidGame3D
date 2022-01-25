@@ -13,6 +13,7 @@
 #include "RockManager.h"
 #include "Rock.h"
 #include "HpUIManager.h"
+#include "SaveInfo.h"
 #include "MyGameScene.h"
 
 MyGameScene::MyGameScene(void)
@@ -58,7 +59,6 @@ void MyGameScene::Start(void)
 	for (Rock* rock : RockManager::GetInstance()->_rocklist)
 	{
 		Scene::AddGameObject(OBJ2, L"Rock", rock);
-		std::cout << "Rock Add" << std::endl;
 	}
 
 	HpUIManager::GetInstance()->CreateHpUI();
@@ -66,10 +66,19 @@ void MyGameScene::Start(void)
 	{
 		Scene::AddGameObject(UI, L"HP", hp);
 	}
+
+	_playTimeText = new Engine::Text(2, 500, L"Arial", L"PlayTime : 0", { 100,0,0 });
+	Scene::AddGameObject(UI, L"TimeUI", _playTimeText);
+	_playTime = 0.0f;
 }
 
 void MyGameScene::Update(const FLOAT& dt)
 {
+	_playTime += dt;
+	char buffer[255];
+	sprintf(buffer, "PlayTime : %f", _playTime);
+	std::wstring str(buffer, &buffer[255]);
+	_playTimeText->SetString(str);
 	Scene::Update(dt);
 	CameraManager::GetInstance()->UpdateCamera(dt);
 
@@ -89,7 +98,13 @@ void MyGameScene::Update(const FLOAT& dt)
 	RockManager::GetInstance()->DisableRock();
 	HpUIManager::GetInstance()->SetHpUI();
 
-	if (PlayerManager::GetInstance()->player->CheckDie() || DXUTWasKeyPressed('J'))
+	if (PlayerManager::GetInstance()->player->CheckDie())
+	{
+		SaveInfo::GetInstance()->Save(_playTime);
+		Engine::SceneManager::GetInstance()->SetScene(L"메뉴");
+		return;
+	}
+	if (DXUTWasKeyPressed('J'))
 	{
 		Engine::SceneManager::GetInstance()->SetScene(L"메뉴");
 		return;

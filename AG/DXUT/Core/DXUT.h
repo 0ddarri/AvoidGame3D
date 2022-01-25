@@ -346,6 +346,7 @@ void      WINAPI DXUTDestroyState(); // Optional method to destroy DXUT's memory
 #include "DXUTenum.h"
 
 #include <iostream>
+#include <fstream>
 #include <list>
 #include <vector>
 #include <map>

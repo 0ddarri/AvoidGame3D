@@ -6,6 +6,7 @@
 #include "Client/CameraManager.h"
 #include "Client/MenuCamera.h"
 #include "MyTitle.h"
+#include "SaveInfo.h"
 #include "MyMenuScene.h"
 
 MyMenuScene::MyMenuScene(void)
@@ -19,9 +20,11 @@ MyMenuScene::~MyMenuScene(void)
 
 void MyMenuScene::Start(void)
 {
+	SaveInfo::GetInstance()->Initialize("info.txt");
+
 	Engine::GraphicsManager::GetInstance()->CreateSprite();
 
-	std::cout << "My Menu Start" << std::endl;
+	std::cout << "My Menu Start111111111111" << std::endl;
 	Engine::Layer* l = new Engine::Layer();
 	layergroup.emplace(UI, l);
 
@@ -34,6 +37,13 @@ void MyMenuScene::Start(void)
 
 	CameraManager::GetInstance()->AddCamera(CAM_MENU, new MenuCamera());
 	CameraManager::GetInstance()->SetCamera(CAM_MENU);
+
+	text = new Engine::Text(2, 500, L"Arial", L"SSS", { 100,300,0 });
+	l->AddGameObject(L"Text", text);
+	std::wstring str = L"Max PlayTime : ";
+	std::wstring buffer(std::to_wstring(SaveInfo::GetInstance()->maxPlayTime));
+	std::wstring st = str + buffer;
+	text->SetString(st);
 }
 
 void MyMenuScene::Update(const FLOAT& dt)

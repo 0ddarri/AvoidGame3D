@@ -464,6 +464,7 @@
     <ClCompile Include="PlayerManager.cpp" />
     <ClCompile Include="Rock.cpp" />
     <ClCompile Include="RockManager.cpp" />
+    <ClCompile Include="SaveInfo.cpp" />
     <ClInclude Include="Client\AimPoint.h" />
     <ClInclude Include="Client\Boss.h" />
     <ClInclude Include="Client\BossDashGun.h" />
@@ -532,6 +533,7 @@
     <ClInclude Include="HpUIManager.h" />
     <ClInclude Include="Rock.h" />
     <ClInclude Include="RockManager.h" />
+    <ClInclude Include="SaveInfo.h" />
     <None Include="DXUT\Optional\directx.ico" />
     <ClInclude Include="DXUT\Core\DXUT.h" />
     <ClInclude Include="DXUT\Core\DXUTenum.h" />

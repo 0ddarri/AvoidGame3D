@@ -306,6 +306,9 @@
     <Filter Include="2Client\1GameObject\0MyUI\1MyHp\HpUIManager">
       <UniqueIdentifier>{c2af74df-f466-48b9-a863-425aa7e8fd2c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="2Client\4MySaveInfo">
+      <UniqueIdentifier>{8ff83b71-c29f-4a4e-87d4-f74ed9e73f0b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="DXUT\Optional\directx.ico">
@@ -598,6 +601,9 @@
     <ClCompile Include="HpUIManager.cpp">
       <Filter>2Client\1GameObject\0MyUI\1MyHp\HpUIManager</Filter>
     </ClCompile>
+    <ClCompile Include="SaveInfo.cpp">
+      <Filter>2Client\4MySaveInfo</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">
@@ -833,6 +839,9 @@
     </ClInclude>
     <ClInclude Include="HpUIManager.h">
       <Filter>2Client\1GameObject\0MyUI\1MyHp\HpUIManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveInfo.h">
+      <Filter>2Client\4MySaveInfo</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

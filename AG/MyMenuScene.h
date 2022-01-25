@@ -1,5 +1,6 @@
 #pragma once
 #include "Engine/Scene.h"
+#include "Engine/Text.h"
 NAMESPACE(engine)
 class Button;
 END
@@ -11,6 +12,7 @@ class MyMenuScene final : public Engine::Scene
 protected:
 	Engine::Button* _button;
 	MyTitle* _title;
+	Engine::Text* text;
 public:
 	explicit MyMenuScene(void);
 	virtual ~MyMenuScene(void);

@@ -36,7 +36,6 @@ void RockManager::DisableRock()
 	{
 		if (rock->transform->localPosition.y < 0 || rock->CheckCol())
 		{
-			std::cout << "Disable Rock" << std::endl;
 			rock->_visible = false;
 			rock->SetTransform({ 9999,9999,9999 });
 			_liverocklist.remove(rock);
