@@ -23,5 +23,7 @@ public:
 	void Exit(void) override;
 
 	void Free(void) override;
+
+	float volume = -1000.0f;
 };
 

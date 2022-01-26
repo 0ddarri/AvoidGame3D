@@ -1,4 +1,5 @@
 #include "DXUT.h"
+#include "../Engine/Sound.h"
 #include "../Engine/ResourceManager.h"
 #include "../Engine/SceneManager.h"
 #include "LoadScene.h"
@@ -13,6 +14,8 @@ LoadScene::~LoadScene(void)
 
 void LoadScene::Start(void)
 {
+	Engine::Sound::GetInstance()->LoadSound();
+
 	Engine::ResourceManager::GetInstance()->AddMesh(MeshType::STATIC, L"Resources/Meshes/Static/", L"skysphere.X", L"SkySphere");
 	Engine::ResourceManager::GetInstance()->AddMesh(MeshType::DYNAMIC, L"Resources/Meshes/Dynamic/", L"Plane.X", L"dynamic");
 	Engine::ResourceManager::GetInstance()->AddShader(L"Resources/Shaders/DynamicMeshShader.fx", L"dyshader");
@@ -48,6 +51,7 @@ void LoadScene::Start(void)
 	Engine::ResourceManager::GetInstance()->AddTexture(L"Resources/Textures/RadarDot.png", L"RadarDot", 1);
 
 	Engine::SceneManager::GetInstance()->SetScene(L"¸Þ´º");
+
 }
 
 void LoadScene::Update(const FLOAT& dt)

@@ -2,6 +2,7 @@
 #include "Engine/Button.h"
 #include "Engine/Layer.h"
 #include "Engine/SceneManager.h"
+#include "Engine/Sound.h"
 #include "Engine/GraphicsManager.h"
 #include "Client/CameraManager.h"
 #include "Client/MenuCamera.h"
@@ -20,6 +21,7 @@ MyMenuScene::~MyMenuScene(void)
 
 void MyMenuScene::Start(void)
 {
+
 	SaveInfo::GetInstance()->Initialize("info.txt");
 
 	Engine::GraphicsManager::GetInstance()->CreateSprite();
@@ -44,6 +46,9 @@ void MyMenuScene::Start(void)
 	std::wstring buffer(std::to_wstring(SaveInfo::GetInstance()->maxPlayTime));
 	std::wstring st = str + buffer;
 	text->SetString(st);
+
+	Engine::Sound::GetInstance()->SoundStop(L"BGM", true);
+	Engine::Sound::GetInstance()->SoundPlay(L"BGM", true, volume);
 }
 
 void MyMenuScene::Update(const FLOAT& dt)
@@ -54,6 +59,21 @@ void MyMenuScene::Update(const FLOAT& dt)
 		{
 			_button->GetButtonFunction()();
 		}
+	}
+
+	if (DXUTIsKeyDown(VK_F1))
+	{
+		volume += dt * 1000;
+		std::cout << volume << std::endl;
+		Engine::Sound::GetInstance()->SoundStop(L"BGM", false);
+		Engine::Sound::GetInstance()->SoundPlay(L"BGM", true, volume);
+	}
+	if (DXUTIsKeyDown(VK_F2))
+	{
+		volume -= dt * 1000;
+		std::cout << volume << std::endl;
+		Engine::Sound::GetInstance()->SoundStop(L"BGM", false);
+		Engine::Sound::GetInstance()->SoundPlay(L"BGM", true, volume);
 	}
 
 	Scene::Update(dt);

@@ -5,6 +5,7 @@
 #include "Engine/CollisionManager.h"
 #include "Engine/StaticMesh.h"
 #include "Engine/Shader.h"
+#include "Engine/Sound.h"
 #include "PlayerManager.h"
 #include "Rock.h"
 
@@ -49,6 +50,7 @@ bool Rock::CheckCol()
 {
 	if (D3DXVec3Length(&(transform->localPosition - PlayerManager::GetInstance()->GetPlayerPosition())) < collisionRadius)
 	{
+		Engine::Sound::GetInstance()->SoundPlay(L"HIT", false, 0);
 		std::cout << "Ãæµ¹" << std::endl;
 		PlayerManager::GetInstance()->player->hp--;
 		std::cout << PlayerManager::GetInstance()->player->hp << std::endl;

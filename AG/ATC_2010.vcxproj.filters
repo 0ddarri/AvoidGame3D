@@ -309,6 +309,9 @@
     <Filter Include="2Client\4MySaveInfo">
       <UniqueIdentifier>{8ff83b71-c29f-4a4e-87d4-f74ed9e73f0b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="1Engine\12Sound">
+      <UniqueIdentifier>{5294c508-cd53-488d-b8e6-bf19977de9a9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="DXUT\Optional\directx.ico">
@@ -604,6 +607,15 @@
     <ClCompile Include="SaveInfo.cpp">
       <Filter>2Client\4MySaveInfo</Filter>
     </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKsound.cpp">
+      <Filter>0Default\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKwavefile.cpp">
+      <Filter>0Default\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Sound.cpp">
+      <Filter>1Engine\12Sound</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">
@@ -842,6 +854,15 @@
     </ClInclude>
     <ClInclude Include="SaveInfo.h">
       <Filter>2Client\4MySaveInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKsound.h">
+      <Filter>0Default\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKwavefile.h">
+      <Filter>0Default\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Sound.h">
+      <Filter>1Engine\12Sound</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

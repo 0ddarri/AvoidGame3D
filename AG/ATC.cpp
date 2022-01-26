@@ -14,6 +14,7 @@
 #include "Client/GameScene.h"
 #include "Client/MenuScene.h"
 #include "Client/LoadScene.h"
+#include "Engine/Sound.h"
 #include "MyMenuScene.h"
 #include "MyGameScene.h"
 
@@ -231,6 +232,7 @@ int main(void)
     DXUTCreateWindow( L"ATC" );
     DXUTCreateDevice( true, windowWidth, windowHeight );
 
+    Engine::Sound::GetInstance()->Initialize();
     Engine::SceneManager::GetInstance()->AddScene(L"게임", new MyGameScene);
     Engine::SceneManager::GetInstance()->AddScene(L"로드", new LoadScene);
     Engine::SceneManager::GetInstance()->AddScene(L"메뉴", new MyMenuScene);

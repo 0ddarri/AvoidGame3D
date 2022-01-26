@@ -359,6 +359,9 @@ void      WINAPI DXUTDestroyState(); // Optional method to destroy DXUT's memory
 //#include <vld.h> 얘는 뭔데 에러나고있지
 #include<random>
 
+#include <SDKsound.h>
+#include <SDKwavefile.h>
+
 #define NAMESPACE(name) namespace name {
 #define END }
 #define USING(name) using namespace name;

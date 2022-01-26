@@ -150,7 +150,7 @@
     </ClCompile>
     <Link>
       <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>d3dx10d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>dsound.lib;d3dx10d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <LargeAddressAware>true</LargeAddressAware>
@@ -418,6 +418,8 @@
     <ClCompile Include="Client\Monster1.cpp" />
     <ClCompile Include="Client\Plane.cpp" />
     <ClCompile Include="Client\Cloud.cpp" />
+    <ClCompile Include="DXUT\Optional\SDKsound.cpp" />
+    <ClCompile Include="DXUT\Optional\SDKwavefile.cpp" />
     <ClCompile Include="Engine\AnimationController.cpp" />
     <ClCompile Include="Engine\Base.cpp" />
     <ClCompile Include="Engine\Button.cpp" />
@@ -443,6 +445,7 @@
     <ClCompile Include="Engine\SceneManager.cpp" />
     <ClCompile Include="Engine\Shader.cpp" />
     <ClCompile Include="Engine\Singleton.cpp" />
+    <ClCompile Include="Engine\Sound.cpp" />
     <ClCompile Include="Engine\StaticMesh.cpp" />
     <ClCompile Include="Engine\StaticUI.cpp" />
     <ClCompile Include="Engine\Subject.cpp" />
@@ -496,6 +499,8 @@
     <ClInclude Include="Client\Monster1.h" />
     <ClInclude Include="Client\Plane.h" />
     <ClInclude Include="Client\Cloud.h" />
+    <ClInclude Include="DXUT\Optional\SDKsound.h" />
+    <ClInclude Include="DXUT\Optional\SDKwavefile.h" />
     <ClInclude Include="Engine\AnimationController.h" />
     <ClInclude Include="Engine\Base.h" />
     <ClInclude Include="Engine\Button.h" />
@@ -520,6 +525,7 @@
     <ClInclude Include="Engine\SceneManager.h" />
     <ClInclude Include="Engine\Shader.h" />
     <ClInclude Include="Engine\Singleton.h" />
+    <ClInclude Include="Engine\Sound.h" />
     <ClInclude Include="Engine\StaticMesh.h" />
     <ClInclude Include="Engine\StaticUI.h" />
     <ClInclude Include="Engine\Subject.h" />

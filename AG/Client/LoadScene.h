@@ -1,7 +1,7 @@
 #pragma once
 #include "../Engine/Scene.h"
-class LoadScene :
-    public Engine::Scene
+
+class LoadScene : public Engine::Scene
 {
 private:
 protected:
